@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nut Incremental</title>
+    <style>
+        #centered-container {
+            text-align: center;
+            margin-top: 50px; /* Adjust as needed */
+        }
+    </style>
+</head>
+<script src="main.js" charset="utf-8" type="text/javascript"></script>
+
+<body onload="gamestart()">
+
+    <div style="float: right;">
+        <p id="GodPowers">1000 God Powers</p>
+        <p id="NutsFarmed">0 Nuts</p>
+        <p id="MoneyCount" style="display: none;">0 Money</p> <!-- Initially hidden -->
+
+        <div class="right-panel">
+            <textarea id="messageBox" rows="10" cols="30" readonly></textarea>
+        </div>
+
+    </div>
+
+    <div id="centered-container">
+        <button onclick="FarmNut()">Farm Nut</button>
+        <button id="moneyButton" style="display: none;" onclick="spendNutsForMoney()">Spend 10 Nuts to gain 1 Money</button>
+    </div>
+
+    <div class="left-panel">
+        <div id="shopButtonContainer" style="display: none;">
+            <button id="shopButton" onclick="openShop()">Open Shop</button>
+        </div>
+        <div id="shop" style="display: none;">
+            <button id="nutFarmButton" onclick="buyNutFarm()">Buy Nut Farm (Cost: 10 Money)</button>
+        </div>
+
+</body>
+</html>
