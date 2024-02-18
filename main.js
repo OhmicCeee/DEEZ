@@ -59,14 +59,14 @@ function spendNutsForMoney() {
 
 function openShop() {
 
-    if (document.getElementById("shopButton").textContent == 'Hide Shop') {
+    if (document.getElementById("shopButton").textContent == 'Close Shop') {
         closeShop();
         return;
     }
 
     var shop = document.getElementById("shop");
     shop.style.display = "block"; // Show the shop
-    document.getElementById("shopButton").textContent = 'Hide Shop';
+    document.getElementById("shopButton").textContent = 'Close Shop';
 
 }
 
