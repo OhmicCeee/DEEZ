@@ -1,8 +1,13 @@
 ﻿<!DOCTYPE html>
+
+<script src="main.js" charset="utf-8" type="text/javascript"></script>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel ="stylesheet" href="format.css">
     <title>Nut Incremental</title>
     <style>
         #centered-container {
@@ -11,7 +16,8 @@
         }
     </style>
 </head>
-<script src="main.js" charset="utf-8" type="text/javascript"></script>
+
+
 
 <body onload="gamestart()">
 
@@ -26,8 +32,13 @@
 
     </div>
 
-    <div id="centered-container">
+    <div class="centered-container">
         <button onclick="FarmNut()">Farm Nut</button>
+       <!-- <button id="moneyButton" style="display: none;" onclick="spendNutsForMoney()">Spend 10 Nuts to gain 1 Money</button> -->
+    </div>
+
+    <div class="centered-container2">
+        <!--   <button onclick="FarmNut()">Farm Nut</button> -->
         <button id="moneyButton" style="display: none;" onclick="spendNutsForMoney()">Spend 10 Nuts to gain 1 Money</button>
     </div>
 
@@ -35,9 +46,11 @@
         <div id="shopButtonContainer" style="display: none;">
             <button id="shopButton" onclick="openShop()">Open Shop</button>
         </div>
+
         <div id="shop" style="display: none;">
             <button id="nutFarmButton" onclick="buyNutFarm()">Buy Nut Farm (Cost: 10 Money)</button>
         </div>
+    </div>
 
 </body>
 </html>

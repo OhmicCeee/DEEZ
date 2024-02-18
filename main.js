@@ -58,8 +58,22 @@ function spendNutsForMoney() {
 
 
 function openShop() {
+
+    if (document.getElementById("shopButton").textContent == 'Hide Shop') {
+        closeShop();
+        return;
+    }
+
     var shop = document.getElementById("shop");
     shop.style.display = "block"; // Show the shop
+    document.getElementById("shopButton").textContent = 'Hide Shop';
+
+}
+
+function closeShop() {
+    var shop = document.getElementById("shop");
+    shop.style.display = "none"; // Show the shop
+    document.getElementById("shopButton").textContent = 'Open Shop';
 }
 
 
@@ -68,6 +82,7 @@ function buyNutFarm() {
         gameData.Money -= gameData.nutFarmCost;
         addMessage("You bought a Nut Farm.");
         startNutFarm();
+        gameData.nutFarmCost *= 1.2
         updateDisplay();
         var shop = document.getElementById("shop");
        // shop.style.display = "none"; // Hide the shop after purchase

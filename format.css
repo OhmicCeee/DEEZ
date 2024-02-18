@@ -1,10 +1,4 @@
-﻿body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Make the body take up the full height of the viewport */
-    margin: 0; /* Remove default margin */
-}
+﻿
 
 
 .left-panel {
@@ -15,10 +9,16 @@
 .right-panel {
     position: absolute;
     right: 0;
+    padding: 10px 10px 10px 10px /*can more shit around with padding pog*/
 }
 
 
-#centered-container {
+.centered-container {
     text-align: center;
-    margin-top: 50px; /* Adjust as needed */
+    margin-top: 25px; /* Adjust as needed */
+}
+
+.centered-container2 {
+    text-align: center;
+    margin-top: 10px; /* Adjust as needed */
 }
