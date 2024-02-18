@@ -15,6 +15,7 @@ body {
 .right-panel {
     position: absolute;
     right: 0;
+    margin-top: 100px;
     padding: 10px 10px 10px 10px /*can move shit around with padding pog*/
 }
 
