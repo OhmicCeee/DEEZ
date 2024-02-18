@@ -1,7 +1,7 @@
 var gameData = {
     Nut: 0,
     NutPerClick: 1,
-    GodPowers: 1000,
+    GodPowers: 10000,
     GodPowerConsumptionPerNut: 1,
     Money: 0,
     moneyButtonVisible: false, // Track if money button is visible
@@ -97,9 +97,11 @@ function startNutFarm() {
     // Implement functionality to produce 1 Nut per second
     setInterval(function () {
         gameData.Nut += 1;
+        gameData.GodPowers -= gameData.GodPowerConsumptionPerNut; // Reduce God powers
         updateDisplay();
     }, 1000); // Run every 1000 milliseconds (1 second)
 }
+
 
 
 function addMessage(message) {
