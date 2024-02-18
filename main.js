@@ -5,9 +5,11 @@ var gameData = {
     GodPowerConsumptionPerNut: 1,
     Money: 0,
     moneyButtonVisible: false, // Track if money button is visible
-    nutFarmCost: 10, // Cost of Nut Farm
+    nutFarmCost: 5, // Cost of Nut Farm
     NPps: 0,
-    npFromFarm: 1
+    GPps: 0,
+    npFromFarm: 1,
+    gpFromFarm: -1
 };
 
 
@@ -89,6 +91,9 @@ function buyNutFarm() {
         document.getElementById("NP/s").style.display = "inline";
         gameData.NPps += gameData.npFromFarm;
         document.getElementById("NP/s").textContent = (gameData.NPps + ' NP/s')
+        document.getElementById("GP/s").style.display = "inline";
+        gameData.GPps += gameData.gpFromFarm;
+        document.getElementById("GP/s").textContent = (gameData.GPps + ' GP/s')
         updateDisplay();
         var shop = document.getElementById("shop");
        // shop.style.display = "none"; // Hide the shop after purchase
