@@ -82,7 +82,8 @@ function buyNutFarm() {
         gameData.Money -= gameData.nutFarmCost;
         addMessage("You bought a Nut Farm.");
         startNutFarm();
-        gameData.nutFarmCost *= 1.2
+        gameData.nutFarmCost = Math.floor(gameData.nutFarmCost *= 1.2);
+        document.getElementById("nutFarmButton").textContent = ('Buy Nut Farm (Cost: ' + gameData.nutFarmCost + ' Money)');
         updateDisplay();
         var shop = document.getElementById("shop");
        // shop.style.display = "none"; // Hide the shop after purchase
