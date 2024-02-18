@@ -21,6 +21,7 @@ body {
 
 .box {
     display: flex;
+    gap: 10px;
     flex-wrap: wrap;
     height: 10px;
     align-content: space-between;

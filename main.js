@@ -88,10 +88,10 @@ function buyNutFarm() {
         startNutFarm();
         gameData.nutFarmCost = Math.floor(gameData.nutFarmCost *= 1.2);
         document.getElementById("nutFarmButton").textContent = ('Buy Nut Farm (Cost: ' + gameData.nutFarmCost + ' Money)');
-        document.getElementById("NP/s").style.display = "inline";
+        document.getElementById("NP/s").style.display = "block";
         gameData.NPps += gameData.npFromFarm;
         document.getElementById("NP/s").textContent = (gameData.NPps + ' NP/s')
-        document.getElementById("GP/s").style.display = "inline";
+        document.getElementById("GP/s").style.display = "block";
         gameData.GPps += gameData.gpFromFarm;
         document.getElementById("GP/s").textContent = (gameData.GPps + ' GP/s')
         updateDisplay();
