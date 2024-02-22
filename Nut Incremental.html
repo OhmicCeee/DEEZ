@@ -1,0 +1,70 @@
+﻿<html>
+
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <!--Buttons -->
+    <div class="box2">
+
+    </div>
+
+    <!--Logo -->
+    <div class="box3">
+        <img src="C:\Users\thetr\OneDrive\Pictures\Reference Photos\Nut Incremental\Logo Finished.png"
+        width="266" height="190">
+    </div>
+
+    <!--Tab Info-->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'MoneyShop')" id="defaultOpen">Money Shop</button>
+        <button class="tablinks" onclick="openTab(event, 'NutShop')">Nut Shop</button>
+        <button class="tablinks" onclick="openTab(event, 'Settings')">Settings</button>
+    </div>
+
+    <div id="MoneyShop" class="tabcontent">
+        <h3>Money Shop</h3>
+        <p>Money Shop</p>
+    </div>
+
+    <div id="NutShop" class="tabcontent">
+        <h3>Nut Shop</h3>
+        <p>Nut Shop</p> 
+    </div>
+
+    <div id="Settings" class="tabcontent">
+        <h3>Dark Mode</h3>
+        <button class="btn-toggle">Toggle Dark-Mode</button>
+    </div>
+
+    <!--Resource Box -->
+    <div class="box">
+        <div>
+            <div id="GodPowers">10000 God Powers</div>
+            <div id="NutPower">0 Nuts</div>
+            <div id="MoneyCount" style="display: none;">0 Money</div> <!-- Initially hidden -->
+        </div>
+
+        <div>
+            <div id="GP/s" style="display: none;">0 GP/s</div>
+            <div id="NP/s" style="display: none;">0 NP/s</div>
+            <div id="MP/s" style="display: none;">0 MP/s</div>
+        </div>
+    </div>
+
+    <!--Message Box Info-->
+    <div class="right-panel">
+        <textarea id="messageBox" rows="40" cols="30" readonly></textarea>
+    </div>
+
+    <!--Script-->
+    <script src="format.js" charset="utf-8" type="text/javascript"></script>   
+
+    <!--Link-->
+    <link rel ="stylesheet" href="format.css">
+
+</body>
