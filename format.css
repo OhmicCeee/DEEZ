@@ -43,7 +43,7 @@ body {
     border: 1px solid #ccc;
     align-content: space-between;
     position: absolute;
-    right: 10px;
+    right: .5%;
     width: 11%;
     height: 190px;
     margin-top: 0px;
@@ -112,15 +112,13 @@ body {
     color: var(--text-color);
     gap: 10px;
     flex-wrap: wrap;
-    height: 10px;
     border: 1px solid #ccc;
     align-content: space-between;
     position: fixed;
     right: 13%;
-    width: 70%;
-    height: 190px;
-    margin-top: 0px;
-    padding: 10px 10px 10px 10px
+    width: 71%;
+    height: 22%;
+    margin-top: .01%;
 }
 
 /*Game Image*/
@@ -133,7 +131,7 @@ body {
     border: 1px solid #ccc;
     align-content: space-between;
     position: absolute;
-    left: 8px;
+    left: .5%;
     width: 14%;
     height: 190px;
     margin-top: 0px;
