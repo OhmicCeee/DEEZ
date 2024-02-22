@@ -44,7 +44,7 @@ body {
     align-content: space-between;
     position: absolute;
     right: 10px;
-    width: 210px;
+    width: 11%;
     height: 190px;
     margin-top: 0px;
     padding: 10px 10px 10px 10px
@@ -55,7 +55,7 @@ body {
     float: left;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 15%;
+    width: 15.2%;
     height: 300px;
     margin-top: 222px;
   }
@@ -115,9 +115,9 @@ body {
     height: 10px;
     border: 1px solid #ccc;
     align-content: space-between;
-    position: absolute;
-    right: 250px;
-    width: 1250px;
+    position: fixed;
+    right: 13%;
+    width: 70%;
     height: 190px;
     margin-top: 0px;
     padding: 10px 10px 10px 10px
@@ -134,7 +134,7 @@ body {
     align-content: space-between;
     position: absolute;
     left: 8px;
-    width: 266px;
+    width: 14%;
     height: 190px;
     margin-top: 0px;
     padding: 10px 10px 10px 10px
