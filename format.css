@@ -1,24 +1,24 @@
 ﻿/*Dark Mode Options*/
 body {
-  --text-color: #222;
-  --bkg-color: #fff;
+  --text-color: #f2f2f2;
+  --bkg-color: #59433e;
   overflow: hidden;
 }
 body.dark-theme {
-  --text-color: #eee;
-  --bkg-color: #121212;
+  --text-color: #f2f2f2;
+  --bkg-color: #261511;
   overflow: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
   /* defaults to dark theme */
   body {
-    --text-color: #eee;
-    --bkg-color: #121212;
+    --text-color: #f2f2f2;
+    --bkg-color: #261511;
   }
   body.light-theme {
-    --text-color: #222;
-    --bkg-color: #fff;
+    --text-color: #f2f2f2;
+    --bkg-color: #59433e;
   }
 }
 
@@ -28,11 +28,13 @@ body.dark-theme {
 
 body {
   background: var(--bkg-color);
+  color:var(--text-color);
 }
 
 h1,
 p {
   color: var(--text-color);
+
 }
 
 /* Columns Info*/
@@ -74,7 +76,6 @@ p {
 .bottom .left .tab {
   float: left;
   border: 1px solid #000000;
-  background-color: #f1f1f1;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -84,10 +85,10 @@ p {
   .tab button {
     display: block;
     background-color: inherit;
-    color: rgb(100, 100, 100);
+    color: inherit;
     padding: 5% 5%;
     width: 100%;
-    border: 1px solid #000000;
+    border: 2px solid #f2f2f2;
     outline: none;
     text-align: left;
     cursor: pointer;
@@ -115,12 +116,11 @@ p {
 /* Tab content */
 .bottom .middle .tabcontent {
   padding: 0px 12px;
-  border: 1px solid #000000;
   width: 100%;
   border-left: none;
   height: 100%;
   display: none;
-  background-color: rgb(255, 1, 1);
+  background-color: inherit;
   overflow: hidden;
 }
 
@@ -137,4 +137,24 @@ p {
   height: 100%;
   width: auto;
   overflow: hidden;
+}
+
+/*Button Style*/
+.button {
+  background-color: #8C7974
+  border: none;
+  border-radius: 6px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*Button Style on Hover*/
+.button:hover {
+  background-color: #ff3333;
+  cursor: pointer;
+  transition: 0.3s;
 }
