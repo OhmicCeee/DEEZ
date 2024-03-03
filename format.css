@@ -54,6 +54,9 @@ p {
 .top .left {
   flex: 3;
   overflow: hidden;
+  float: right;
+  height: 100%;
+  width: 100%;
 }
 
 .top .right {
@@ -154,6 +157,26 @@ p {
 
 /*Button Style on Hover*/
 .button:hover {
+  background-color: #ff3333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/*Dark Mode Button*/
+.toggle-button {
+  background-color: #8C7974;
+  border: none;
+  border-radius: 6px;
+  color: #f2f2f2;;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*Button Style on Hover*/
+.toggle-button:hover {
   background-color: #ff3333;
   cursor: pointer;
   transition: 0.3s;
